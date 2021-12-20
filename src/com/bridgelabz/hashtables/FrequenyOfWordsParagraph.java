@@ -29,13 +29,13 @@ public class FrequenyOfWordsParagraph {
 			}
 		}
 		
-		//printing
+		//print with index
 		int index = 0;
 		for (Map.Entry<String, Integer> display : myMapNode.entrySet()) {
 			String result = display.getKey() + ":" + display.getValue();
 			System.out.println(result + ", Index is: " + index++);
-			
 		}
+		
 
 	}
 
