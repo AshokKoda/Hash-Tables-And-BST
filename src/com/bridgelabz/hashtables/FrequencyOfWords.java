@@ -3,6 +3,9 @@ package com.bridgelabz.hashtables;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Find frequency of words
+ */
 public class FrequencyOfWords {
 
 	public static void main(String[] args) {
