@@ -30,6 +30,8 @@ class BST {
 		a.right = null;
 		return a;
 	}
+	
+	
 
 	//print data
 	public void printNodes(Node node) {
@@ -39,6 +41,28 @@ class BST {
 		System.out.println(node.data + " ");
 		printNodes(node.left);
 		printNodes(node.right);
+	}
+	
+	//Search
+	public boolean searchNode(Node node, int key) {
+		if(node ==null) {
+			return false;
+		}
+		
+		boolean isExist = false;
+		
+		while(node != null) {
+			if(key < node.data) {
+				node = node.left;
+			}else if(key > node.data) {
+				node = node.right;
+			}else {
+				isExist = true;
+				break;
+			}
+		}
+		return isExist;
+		
 	}
 }
 
@@ -64,6 +88,8 @@ public class BinarySearchTree {
 		node = bst.insert(node, 67); //right side of the 65
 		node = bst.insert(node, 95); //right side of the 70
 		bst.printNodes(node);
+		
+		System.out.println("Key 30 found in BST:" + bst.searchNode(node, 63));
 	}
 
 }
