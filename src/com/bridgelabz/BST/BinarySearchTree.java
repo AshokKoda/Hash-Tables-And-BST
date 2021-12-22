@@ -50,9 +50,19 @@ public class BinarySearchTree {
 		BST bst = new BST();
 		Node node = null;
 		
-		node = bst.insert(node, 56);
-		node = bst.insert(node, 30);
-		node = bst.insert(node, 70);
+		node = bst.insert(node, 56); //root is 56
+		node = bst.insert(node, 30); //left side of the root
+		node = bst.insert(node, 22); //left side of the 30
+		node = bst.insert(node, 11); //left side of the 22
+		node = bst.insert(node, 3); //left side of the 11
+		node = bst.insert(node, 16); //right side pf the 11
+		node = bst.insert(node, 40); //right side of the 30
+		node = bst.insert(node, 70); //right side of the root
+		node = bst.insert(node, 60); //left side of the 70
+		node = bst.insert(node, 65); //right side of the 60
+		node = bst.insert(node, 63); //left side of the 65
+		node = bst.insert(node, 67); //right side of the 65
+		node = bst.insert(node, 95); //right side of the 70
 		bst.printNodes(node);
 	}
 
